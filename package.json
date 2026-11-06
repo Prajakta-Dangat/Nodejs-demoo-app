@@ -1,13 +1,20 @@
 {
   "name": "nodejs-demo-app",
   "version": "1.0.0",
-  "description": "Node.js application for GitHub Actions CI/CD",
+  "description": "Node.js CI/CD pipeline using GitHub Actions and Docker",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "node --check app.js"
+    "test": "node --test"
   },
-  "keywords": [],
+  "keywords": [
+    "nodejs",
+    "docker",
+    "github-actions",
+    "cicd",
+    "devops"
+  ],
   "author": "Prajakta",
-  "license": "ISC"
+  "license": "MIT"
 }
+

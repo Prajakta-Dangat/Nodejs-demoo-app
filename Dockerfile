@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
@@ -6,7 +6,9 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY app.js .
+
+COPY test ./test
 
 EXPOSE 3000
 

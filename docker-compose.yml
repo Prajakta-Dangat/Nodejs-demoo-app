@@ -1,0 +1,9 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nodejs-demo-container
+    ports:
+      - "8081:3000"
+    restart: unless-stopped
